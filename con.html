@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Excercise Part 2</title>
+    <link rel="stylesheet" href="/CSS/layout_Excercise_Part_1.css">
+</head>
+<body>
+    <div class="container">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+        <div id="seven"></div>
+        </div>
+</body>
+</html>
+
+.container{
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template-areas: 
+  "o o t"
+  "th f t"
+  "fi fi fi"
+    ;
+  grid-gap: 5px;
+}
+#one{
+  grid-area: o;
+  background-color: pink;
+  border: 3px solid black;
+  padding: 50px;
+}
+#two{
+  grid-area: t;
+  background-color: blue;
+  border: 3px solid black;
+  padding: 50px;
+}
+#three{
+  grid-area: th;
+  background-color: pink;
+  border: 3px solid black;
+  padding: 50px;
+}
+#four{
+  grid-area: f;
+  background-color: blue;
+  border: 3px solid black;
+  padding: 50px;
+}
+#five{
+  grid-area: fi;
+  background-color: pink;
+  border: 3px solid black;
+  padding: 50px;
+}
+#six{
+  grid-area: s;
+  background-color: blue;
+  border: 3px solid black;
+  padding: 50px;
+}
+#seven{
+  grid-area: se;
+  background-color: yellow;
+  border: 3px solid black;
+  padding: 50px;
+}
+
+
+/*
+  .item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+*/
+
+<div class="grid-container">
+  <div class="grid-item item1">1</div>
+  <div class="grid-item item2">2</div>
+  <div class="grid-item item3">3</div>  
+  <div class="grid-item item4">4</div>
+  <div class="grid-item item5">5</div>
+</div>
+
+grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+
+
